@@ -160,7 +160,7 @@ def draw_bounding_box_on_image(image,
     (left, right, top, bottom) = (xmin, xmax, ymin, ymax)
   draw.line([(left, top), (left, bottom), (right, bottom),
              (right, top), (left, top)], width=thickness, fill=color)
-  font = ImageFont.load_default()
+  font = ImageFont.truetype(size=60)
 
   # If the total height of the display strings added to the top of the bounding
   # box exceeds the top of the image, stack the strings below the bounding box
